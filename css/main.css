@@ -1,0 +1,313 @@
+/***** BASE STYLES *****/
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#about, #work, #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 600px;*/
+}
+
+/***** GRID *****/
+
+/*.full-width {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.half-width {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-width {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+/***** HEADER *****/
+
+header {
+    /*height: 800px;*/
+    background: url('../img/jubilee-hero.png');
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+header h1 {
+    padding: 40px 0 40px 0;
+    font-family: 'Lora', serif;
+    font-size: 2em;
+    color: #bbc085;
+    font-weight: normal;
+}
+
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.125em;
+    color: #828282;
+    padding-right: 70px;
+}
+
+header h2 {
+    width: 90%;
+    clear: both;
+    font-family: 'Lora', serif;
+    font-size: 3.2em;
+    line-height: 2em;
+    color: #9b9b9b;
+    padding: 10px 0 20px 25px;
+}
+
+header h2 span {
+    color: #000000;
+}
+
+/***** ABOUT *****/
+
+#about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+/*
+#about .full-width {
+    padding: 80px 0;
+}*/
+
+#about h2 {
+    font-family: Lora, serif;
+    font-size: 2.25em;
+    padding-left: 45px;
+}
+
+#about p {
+    font-size: 1.5em;
+    color: #7f7f7f;
+    line-height: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+/***** WORK *****/
+
+#work {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+    background-color: #f9ceb7;
+}
+/*
+#work .full-width {
+    padding: 115px 0;
+}*/
+
+#work img {
+    padding: 30px 0 30px 0;
+}
+
+#work h3 {
+    font-size: 2em;
+    line-height: 35px;
+    /*width: 190px;*/
+    margin: 0 auto;
+}
+
+#work p {
+    font-family: Lora, serif;
+    font-size: 1.5em;
+    line-height: 25px;
+    padding: 0 100px;
+}
+
+/***** CONTACT *****/
+
+#contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #ebebeb;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*#contact .full-width {
+    padding: 110px 0;
+}*/
+
+#contact #contact-img {
+    /*margin-left: 25px;*/
+    border: 12px solid #ffffff;
+}
+
+/*#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
+    padding-left: 115px;
+}*/
+/*
+#contact #envelope {
+    padding: 0 10px 0 115px;
+}*/
+
+#contact h2 {
+    font-family: Lora, serif;
+    font-size: 2.125em;
+    line-height: 45px;
+    padding-bottom: 10px;
+}
+
+#contact #email-header {
+    font-size: 1.8125em;
+    font-weight: normal;
+    line-height: 40px;
+    margin: -15px 0 5px 0;
+}
+
+#contact #socialmedia-header {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 40px 0 0 0;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #c49075;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact ul li {
+    display: inline-block;
+}
+
+#contact ul img {
+    font-size: 2em;
+    padding-right: 48px;
+    padding-bottom: 20px;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px){
+
+
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+    
+    
+    /*HEADER */
+        header {
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 700px;
+    
+    }
+
+        header .half-width {
+            width: 50%;
+            float: left;
+    }
+
+        header h1 {
+            text-align: left;
+            width: 50%;
+            padding-left: 30px;
+    }
+
+        header h2 {
+            margin: 0;
+            text-align: left;
+            font-size: 4.5em;
+    }
+    
+        header nav {
+            text-align: right;
+            padding-top: 50px;
+    }
+
+        header nav ul {
+            display: flex;
+            justify-content: space-between;
+    }
+
+    /* ABOUT */
+
+        #about .half-width {
+            width: 50%;
+            float: left;
+    }
+
+    /* WORK */
+
+        #work .full-width {
+            padding: 115px 0;
+    }
+
+        #work .third-width {
+            width: 33%;
+            float: left;
+    }
+
+    /* CONTACT */
+
+        #contact .full-width {
+            padding: 110px 0;
+        }
+
+        #contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
+            padding-left: 115px;
+        }
+
+        #contact #envelope {
+            padding: 0 10px 0 115px;
+        }
+
+        #contact .half-width {
+            width: 50%;
+            float: left;
+        }
+
+}
